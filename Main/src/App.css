@@ -1,0 +1,314 @@
+
+
+/*global styling */
+*{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;;
+    line-height:1.5;
+}
+/*define variables*/
+:root{
+    --darkcolor: #131e53;
+    --mediumcolor:#749ec8;
+    --lightcolor: #a9b5c9;
+    --white: #f2f3f7;
+
+
+}
+/*Adds a smooth transition when navigating to different sections of the page*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:var(--white);
+}
+
+/*header title styling */
+header h1 {
+    font-size: 24px;
+    color:var(--darkcolor);
+    text-align:center;
+    margin:20px 0;
+}
+
+/*Navigation page links to be spaced out across header*/
+nav ul{
+    display:flex;
+    justify-content:space-evenly;
+    margin:5px 20px 5px 20px;
+    font-size: 20px;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+    display:inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--darkcolor);
+}
+
+nav a:hover{
+ text-shadow: 1px 1px 3px var(--lightcolor);
+    }
+
+/*section styling to separate each topic or navigational piece*/
+
+/*Splash content and styling*/
+#Splash{
+
+    background-color:var(--white);
+    color:var(--darkcolor);
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+/*Placed header overtop image container*/
+#Splash h2{
+    padding:20px;
+    font-size:50px;
+    position:absolute;
+    flex:auto;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+#Splash p{
+    font-size:16px;
+}
+#splashImage{
+    flex:auto;
+
+}
+
+#Splash img{
+    width:100%;
+}
+
+/*Styling for the About Me section */
+/*About contains image and aboutContent */
+#About{
+    padding:20px;
+    background-color:var(--mediumcolor);
+    color:var(--white);
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+/*About Content contains the paragraphs and header */
+#aboutContent{
+    padding:20px;
+    margin:20px;
+    display:flex;
+    display:block;
+}
+
+#aboutContent h2{
+    display:inline-block;
+    font-size:50px;
+}
+#aboutContent p{
+    font-size:16px;
+}
+
+/*styled image to look like a polaroid image*/
+#About img{
+    max-width:300px;
+    border:6px solid var(--white);
+    border-bottom-width:50px;
+    box-shadow: 5px 8px 18px var(--darkcolor);
+    transform: rotate(-5deg);
+    margin:20px;
+}
+
+/*Start Portfolio section styling */
+/*Portfolio container has portfolioHeader and portfolioBlock and items*/
+
+#Portfolio{
+    padding:0px 20px 20px 20px;
+    background-color:var(--white);
+    color:var(--darkcolor);
+    display:flex;
+    align-items:center;
+}
+#Portfolio a{
+    text-decoration: none;
+}
+
+
+
+/*Portfolio section header and subtext to be next to portfolio pieces*/
+
+#portfolioHeader{
+    padding:20px;
+    flex:auto;
+}
+
+#portfolioHeader h2{
+    font-size:50px;
+}
+
+#portfolioHeader p{
+    margin-top:15px;
+    font-size:16px;
+}
+
+
+
+
+/*portfolioBlock is the container with .work as items*/
+#portfolioBlock{
+    padding:5px 0px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/*sizing of work container that will hold image link to portfolio items, keeping 1-2 items per row*/
+.work{
+    padding:5px;
+    flex: 50%;
+    position: relative;
+    text-align: center;
+}
+
+/*the first portfolio item will be larger than the subsequent items*/
+#portfolioBlock .work:nth-child(1){
+    padding:5px;
+    flex: 100%;
+}
+
+/*Images for portfolio items will take up the entire space of their work container*/
+.work a img, #highlightWork a img{
+    width:100%;
+ 
+}
+
+/*added some styling when the user hovers over the portfolio items*/
+.img-on{
+    display:none;
+}
+
+.img-on:hover{
+    display:block;
+}
+
+.img-off:hover{
+    display:none;
+}
+
+.work img:hover {
+    box-shadow: inset 0px 0px 8px
+    var(--mediumcolor), 0px 0px 15px
+    var(--mediumcolor);
+
+}
+
+
+/*Label styling over each work item*/
+
+
+.work .title{
+position:absolute;
+padding:5px;
+top: 10px; left: 30px;
+background-color: rgba(255, 255, 255, 0.9);
+font-size: 24px;
+
+}
+
+.work .deployedLink{
+    position:absolute;
+    padding:5px;
+    top: 60px; left: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+ .work .repo{
+    position:absolute;
+    padding:5px;
+    top: 100px; left: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+      
+}
+
+/*styling for the contact section*/
+#Contact{
+    padding:20px 20px 30px 20px;
+    background-color:var(--mediumcolor);
+    color:var(--white);
+    text-align:center;
+
+}
+/*styling to add icons next to phone and email*/
+#Contact span{
+    font-size:20px;
+}
+
+#Contact h2{
+    font-size: 50px;
+    margin:20px 0;
+    
+}
+
+#Contact p{
+    font-size: 16px;
+}
+
+/*social container holding social media icons and links*/
+#social{
+    margin:5px;
+    font-size: 16px;
+    display:flex;
+    justify-content:center;
+    }
+#social ul li{
+    list-style-type: none;
+    display:inline;
+    color:var(--white);
+}
+#social a{
+    text-decoration: none;
+}
+
+#social img{
+    width:30px;
+    margin:5px;
+    padding:2px;
+
+}
+
+/*Footer styling*/
+
+footer{
+padding:20px;
+color:var(--darkcolor);
+background-color:var(--white);
+font-size:12px;
+text-align: center;
+
+}
+
+
+/*For smaller screen sizes such as phones and tablets, the portfolio items will fall into a column rather than row*/
+@media screen and (max-width: 768px) {
+ #Portfolio{
+      flex-direction: column;
+    }
+
+#About{
+    flex-direction: column;
+  }
+
+.work{
+    padding:5px;
+    flex: 100%;
+    position: relative;
+    text-align: center;
+}
+
+}
