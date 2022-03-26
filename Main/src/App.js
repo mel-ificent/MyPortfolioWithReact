@@ -1,16 +1,17 @@
 import './App.css';
-import Header from './components/';
-import Navigation from './components/';
-import Project from './components/';
-import Footer from './components/';
+import Header from './components/Header/Header';
+import Navigation from './components/Navigation/Navigation';
+import Project from './components/Project/Project';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="profile-app">
-      <Header />
-      <Navigation />
-      <Project />
-      <Footer />
+        <Navigation />
+        <Header />
+        <Project />
+        <Footer />
+
     </div>
 
   );
