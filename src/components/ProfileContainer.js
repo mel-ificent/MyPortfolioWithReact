@@ -7,20 +7,14 @@ import About from './About/About.js';
 import Contact from './Contact/Contact.js';
 
 export default function ProfileContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return(
-        <div>
-        <Header />
-        <Footer />
-        </div>
-      );
-    }
+
     if (currentPage === 'About') {
         return(
             <div>
+            <Header />
             <About />
             <Footer />
             </div>
