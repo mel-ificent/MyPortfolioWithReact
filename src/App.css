@@ -30,15 +30,24 @@ header h1 {
     font-size: 24px;
     color:var(--darkcolor);
     text-align:center;
-    margin:20px 0;
+    margin:40px 0 20px 0;
 }
 
 /*Navigation page links to be spaced out across header*/
+nav{
+    background-color:var(--white);
+    position:fixed;
+    width: 100%;
+    z-index:999;
+    top:0;
+}
+
 nav ul{
     display:flex;
     justify-content:space-evenly;
     margin:5px 20px 5px 20px;
     font-size: 20px;
+    padding-inline-start: 0px;
 
 }
 
@@ -55,6 +64,15 @@ nav a{
 nav a:hover{
  text-shadow: 1px 1px 3px var(--lightcolor);
     }
+
+.nav-link-active{
+    text-shadow: 1px 1px 3px var(--mediumcolor);
+       }
+
+.nav-link{
+    text-decoration: none;
+    color: var(--darkcolor);
+}
 
 /*section styling to separate each topic or navigational piece*/
 
@@ -260,11 +278,12 @@ font-size: 24px;
 }
 
 /*social container holding social media icons and links*/
-#social{
+#social ul{ 
     margin:5px;
     font-size: 16px;
     display:flex;
     justify-content:center;
+    padding-inline-start: 0px;
     }
 #social ul li{
     list-style-type: none;
