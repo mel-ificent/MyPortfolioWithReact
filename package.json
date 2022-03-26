@@ -1,0 +1,17 @@
+{
+    "name": "My Portfolio",
+    "version": "1.0.0",
+    "main": "app.js",
+    "homepage": "https://mel-ificent.github.io/MyPortfolioWithReact",
+    "author": "Melissa Donato",
+    "license": "MIT",
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build"
+    },
+    "dependencies": {
+        "gh-pages": "^3.2.3"
+    }
+}
