@@ -18,25 +18,8 @@ function Project() {
 
 
 <div id="portfolioBlock">
-    <section class="work" onmouseover="highlightImg()" onmouseout="highlightImgReset()">
-       <div class="title">
-            <h2>Me vs. U</h2>
-        </div>
-        <div class="deployedLink">
-            <a href="https://fast-beach-60601.herokuapp.com/" target="_blank">
-                <h3>Link to Deployed Application</h3>
-            </a>
-        </div>
-        <div class="repo">
-            <a href="https://github.com/jgarner828/ME-vs-U" target="_blank">
-                <h3>Link to GitHub Repository</h3>
-            </a>
-        </div>
-            <a>
-                <img id="img-highlight"  src={tablet} alt="Highlighted Project"/>
-           </a>
 
-    </section>
+
    
     <section class="work" onmouseover="projTwoImg()" onmouseout="projTwoImgReset()" >
         <div class="title">
@@ -78,18 +61,62 @@ function Project() {
 
     </section>
     <section class="work">
-        <h3 class="title">Future Work</h3>
+    <div class="title">
+            <h2>Future Work</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://github.com/mel-ificent" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/mel-ificent" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+
         <a>
             <img src={paint2} alt="placeholder image1"/>
         </a>
 
     </section>
     <section class="work">
-        <h3 class="title">Future Work</h3>
+    <div class="title">
+            <h2>Future Work</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://github.com/mel-ificent" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/mel-ificent" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
         <a>
             <img src={CSSGradient} alt="placeholder image1"/>
         </a>
     
+    </section>
+        <section class="work" onmouseover="highlightImg()" onmouseout="highlightImgReset()">
+       <div class="title">
+            <h2>Me vs. U</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://fast-beach-60601.herokuapp.com/" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/jgarner828/ME-vs-U" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+            <a>
+                <img id="img-highlight"  src={tablet} alt="Highlighted Project"/>
+           </a>
+
     </section>
 
 

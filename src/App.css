@@ -170,16 +170,16 @@ nav a:hover{
 /*sizing of work container that will hold image link to portfolio items, keeping 1-2 items per row*/
 .work{
     padding:5px;
-    flex: 50%;
+    flex:40%;
     position: relative;
     text-align: center;
 }
 
 /*the first portfolio item will be larger than the subsequent items*/
-#portfolioBlock .work:nth-child(1){
+/* #highlight-work{
     padding:5px;
-    flex: 100%;
-}
+    flex: 50%;
+} */
 
 /*Images for portfolio items will take up the entire space of their work container*/
 .work a img, #highlightWork a img{
@@ -211,27 +211,27 @@ nav a:hover{
 /*Label styling over each work item*/
 
 
-.work .title{
+.work .title h2{
 position:absolute;
-padding:5px;
-top: 10px; left: 30px;
+padding:2px;
+top: 5%; left: 30px;
 background-color: rgba(255, 255, 255, 0.9);
 font-size: 24px;
 
 }
 
-.work .deployedLink{
+.work .deployedLink h3{
     position:absolute;
     padding:5px;
-    top: 60px; left: 30px;
+    top: 30%; left: 30px;
     background-color: rgba(255, 255, 255, 0.9);
     
 }
 
- .work .repo{
+ .work .repo h3{
     position:absolute;
     padding:5px;
-    top: 100px; left: 30px;
+    top: 55%; left: 30px;
     background-color: rgba(255, 255, 255, 0.9);
       
 }
