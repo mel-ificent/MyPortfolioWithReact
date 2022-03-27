@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/MyPortfolioWithReact/static/css/main.ba0fc17e.css",
+    "main.js": "/MyPortfolioWithReact/static/js/main.b7d7640d.js",
+    "static/media/tablet.jpg": "/MyPortfolioWithReact/static/media/tablet.984dcaffb012586ed5e2.jpg",
+    "static/media/pencils.jpg": "/MyPortfolioWithReact/static/media/pencils.cfc70d3eecaf09113cf1.jpg",
+    "static/media/mevsu.jpg": "/MyPortfolioWithReact/static/media/mevsu.5031f4b581243367290e.jpg",
+    "static/media/paint2.jpg": "/MyPortfolioWithReact/static/media/paint2.043ef86e34e4399d9aec.jpg",
+    "static/media/youluckydog.jpg": "/MyPortfolioWithReact/static/media/youluckydog.89af2dfe264c260b2a43.jpg",
+    "static/media/weatherapp.jpg": "/MyPortfolioWithReact/static/media/weatherapp.557bb7fd92442aea92ff.jpg",
+    "static/media/keyboard1.jpg": "/MyPortfolioWithReact/static/media/keyboard1.9caf14e2350357f2adc7.jpg",
+    "static/media/dailyplanner.jpg": "/MyPortfolioWithReact/static/media/dailyplanner.7c8d55b51ca4202daccc.jpg",
+    "static/media/profile1.jpg": "/MyPortfolioWithReact/static/media/profile1.033ba8a66b163e4c60cf.jpg",
+    "static/media/keyboard2.jpg": "/MyPortfolioWithReact/static/media/keyboard2.f171a3c5e4529b6fe33f.jpg",
+    "static/media/notetaker.jpg": "/MyPortfolioWithReact/static/media/notetaker.f6c1a7a0222deea71c82.jpg",
+    "static/media/CSSGradient.jpg": "/MyPortfolioWithReact/static/media/CSSGradient.bd14812d44c15091978a.jpg",
+    "static/media/newpost.jpg": "/MyPortfolioWithReact/static/media/newpost.59da1dc8a0ab5432f3cf.jpg",
+    "static/media/stack.jpg": "/MyPortfolioWithReact/static/media/stack.5397aebfd74bf4c156a1.jpg",
+    "static/media/github.jpg": "/MyPortfolioWithReact/static/media/github.53a099089f6ce13915bc.jpg",
+    "static/media/linkedin.jpg": "/MyPortfolioWithReact/static/media/linkedin.7cb04da61cb885b431ab.jpg",
+    "index.html": "/MyPortfolioWithReact/index.html",
+    "main.ba0fc17e.css.map": "/MyPortfolioWithReact/static/css/main.ba0fc17e.css.map",
+    "main.b7d7640d.js.map": "/MyPortfolioWithReact/static/js/main.b7d7640d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba0fc17e.css",
+    "static/js/main.b7d7640d.js"
+  ]
+}
