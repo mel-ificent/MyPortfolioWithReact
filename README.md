@@ -54,7 +54,7 @@ No test scripts for this application.
 
 
 ## Deployed Application
-[Checkout the live application]()
+[Checkout the live application](https://mel-ificent.github.io/MyPortfolioWithReact/)
 
 ## Questions
 Contact Details:
