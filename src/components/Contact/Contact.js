@@ -1,3 +1,4 @@
+import { validate } from 'json-schema';
 import React, { useState } from 'react';
 
 
@@ -14,14 +15,30 @@ function Contact() {
     return name === 'name' ? setName(value) : name=== 'email'? setEmail(value): setMessage(value);
   };
 
+  const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    alert(`Thank you for your message!`);
-    setName('');
-    setEmail('');
-    setMessage('');
+if(!name || !email || !message){
+  alert(`Please complete all fields`);
+}
+
+else if(!validateEmail(email)){
+  alert(`Please enter a valid email address`);
+}
+else{
+  alert(`Thank you for your message!`);
+  setName('');
+  setEmail('');
+  setMessage('');
+}
+
   };
   return (
     <section id="Contact">
