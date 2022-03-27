@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tablet from './../../Images/tablet.jpg';
 import pencils from './../../Images/pencils.jpg';
 import keyboard2 from './../../Images/keyboard2.jpg';
+import keyboard1 from './../../Images/keyboard1.jpg';
 import paint2 from './../../Images/paint2.jpg';
 import CSSGradient from './../../Images/CSSGradient.jpg';
+import mevsu from './../../Images/mevsu.jpg';
+import youluckydog from './../../Images/youluckydog.jpg';
+import newpost from './../../Images/newpost.jpg';
+import notetaker from './../../Images/notetaker.jpg';
+import dailyplanner from './../../Images/dailyplanner.jpg';
+import weatherapp from './../../Images/weatherapp.jpg';
 
 function Project() {
+
+  const [showImg, setShowImg] = useState(false);
+
 
   return (
 <section id="Portfolio">
@@ -19,87 +29,9 @@ function Project() {
 
 <div id="portfolioBlock">
 
-
-   
-    <section class="work" onmouseover="projTwoImg()" onmouseout="projTwoImgReset()" >
-        <div class="title">
-            <h2>You Lucky Dog</h2>
-        </div>
-        <div class="deployedLink">
-            <a href="https://jddlwlr.github.io/You-Lucky-Dog/" target="_blank">
-                <h3>Link to Deployed Application</h3>
-            </a>
-        </div>
-        <div class="repo">
-            <a href="https://github.com/jddlwlr/You-Lucky-Dog" target="_blank">
-                <h3>Link to GitHub Repository</h3>
-            </a>
-        </div>
-        <a>
-            <img id="img-proj-two" src={pencils} alt="Project Two"/>
-        </a>
-
-    </section>
-    
-    <section class="work" onmouseover="projOneImg()" onmouseout="projOneImgReset()" >
-        <div class="title">
-            <h2>Tech Blog</h2>
-        </div>
-        <div class="deployedLink">
-            <a href="https://warm-plateau-22528.herokuapp.com/" target="_blank">
-                <h3>Link to Deployed Application</h3>
-            </a>
-        </div>
-        <div class="repo">
-            <a href="https://github.com/mel-ificent/TechBlog" target="_blank">
-                <h3>Link to GitHub Repository</h3>
-            </a>
-        </div>
-        <a>
-            <img id="img-proj-one" src={keyboard2} alt="Project One"/>
-        </a>
-
-    </section>
-    <section class="work">
-    <div class="title">
-            <h2>Future Work</h2>
-        </div>
-        <div class="deployedLink">
-            <a href="https://github.com/mel-ificent" target="_blank">
-                <h3>Link to Deployed Application</h3>
-            </a>
-        </div>
-        <div class="repo">
-            <a href="https://github.com/mel-ificent" target="_blank">
-                <h3>Link to GitHub Repository</h3>
-            </a>
-        </div>
-
-        <a>
-            <img src={paint2} alt="placeholder image1"/>
-        </a>
-
-    </section>
-    <section class="work">
-    <div class="title">
-            <h2>Future Work</h2>
-        </div>
-        <div class="deployedLink">
-            <a href="https://github.com/mel-ificent" target="_blank">
-                <h3>Link to Deployed Application</h3>
-            </a>
-        </div>
-        <div class="repo">
-            <a href="https://github.com/mel-ificent" target="_blank">
-                <h3>Link to GitHub Repository</h3>
-            </a>
-        </div>
-        <a>
-            <img src={CSSGradient} alt="placeholder image1"/>
-        </a>
-    
-    </section>
-        <section class="work" onmouseover="highlightImg()" onmouseout="highlightImgReset()">
+<section class="work" 
+        onMouseEnter={() => setShowImg(true)}
+        onMouseLeave={() => setShowImg(false)}>
        <div class="title">
             <h2>Me vs. U</h2>
         </div>
@@ -113,11 +45,167 @@ function Project() {
                 <h3>Link to GitHub Repository</h3>
             </a>
         </div>
+        {showImg && (
             <a>
-                <img id="img-highlight"  src={tablet} alt="Highlighted Project"/>
-           </a>
+            <img id="img-highlight"  src={mevsu} alt="Highlighted Project"/>
+            </a>
+        )}
+        {!showImg && (
+            <a>
+            <img id="img-highlight"  src={tablet} alt="Highlighted Project"/>
+            </a>
+        )}
 
     </section>
+
+
+
+
+    
+   
+    <section class="work" 
+        onMouseEnter={() => setShowImg(true)}
+        onMouseLeave={() => setShowImg(false)}>
+        <div class="title">
+            <h2>You Lucky Dog</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://jddlwlr.github.io/You-Lucky-Dog/" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/jddlwlr/You-Lucky-Dog" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+        {showImg && (
+            <a>
+            <img id="img-highlight"  src={youluckydog} alt="Highlighted Project"/>
+            </a>
+        )}
+        {!showImg && (
+            <a>
+            <img id="img-highlight"  src={pencils} alt="Highlighted Project"/>
+            </a>
+        )}
+
+    </section>
+    
+    <section class="work" 
+        onMouseEnter={() => setShowImg(true)}
+        onMouseLeave={() => setShowImg(false)}>
+        <div class="title">
+            <h2>Tech Blog</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://warm-plateau-22528.herokuapp.com/" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/mel-ificent/TechBlog" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+        {showImg && (
+            <a>
+            <img id="img-highlight"  src={newpost} alt="Highlighted Project"/>
+            </a>
+        )}
+        {!showImg && (
+            <a>
+            <img id="img-highlight"  src={keyboard2} alt="Highlighted Project"/>
+            </a>
+        )}
+
+    </section>
+    <section class="work" 
+        onMouseEnter={() => setShowImg(true)}
+        onMouseLeave={() => setShowImg(false)}>
+    <div class="title">
+            <h2>Note Taker</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://warm-bayou-15489.herokuapp.com/" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/mel-ificent/NoteTaker#deployed-application" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+
+        {showImg && (
+            <a>
+            <img id="img-highlight"  src={notetaker} alt="Highlighted Project"/>
+            </a>
+        )}
+        {!showImg && (
+            <a>
+            <img id="img-highlight"  src={paint2} alt="Highlighted Project"/>
+            </a>
+        )}
+
+    </section>
+    <section class="work" 
+        onMouseEnter={() => setShowImg(true)}
+        onMouseLeave={() => setShowImg(false)}>
+    <div class="title">
+            <h2>Daily Planner</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://mel-ificent.github.io/DailyPlanner/" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/mel-ificent/DailyPlanner" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+        {showImg && (
+            <a>
+            <img id="img-highlight"  src={dailyplanner} alt="Highlighted Project"/>
+            </a>
+        )}
+        {!showImg && (
+            <a>
+            <img id="img-highlight"  src={CSSGradient} alt="Highlighted Project"/>
+            </a>
+        )}
+    
+    </section>
+    <section class="work" 
+        onMouseEnter={() => setShowImg(true)}
+        onMouseLeave={() => setShowImg(false)}>
+    <div class="title">
+            <h2>Weather App</h2>
+        </div>
+        <div class="deployedLink">
+            <a href="https://mel-ificent.github.io/WeatherApp/" target="_blank">
+                <h3>Link to Deployed Application</h3>
+            </a>
+        </div>
+        <div class="repo">
+            <a href="https://github.com/mel-ificent/WeatherApp" target="_blank">
+                <h3>Link to GitHub Repository</h3>
+            </a>
+        </div>
+        {showImg && (
+            <a>
+            <img id="img-highlight"  src={weatherapp} alt="Highlighted Project"/>
+            </a>
+        )}
+        {!showImg && (
+            <a>
+            <img id="img-highlight"  src={keyboard1} alt="Highlighted Project"/>
+            </a>
+        )}
+
+    </section>
+       
 
 
 </div>

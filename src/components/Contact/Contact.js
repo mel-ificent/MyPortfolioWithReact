@@ -26,7 +26,7 @@ function Contact() {
   return (
     <section id="Contact">
     <h2>Let's Connect!</h2>
-    <form className="form">
+    <form id="contact-form" className="form">
         <input
           value={name}
           name="name"
@@ -34,6 +34,7 @@ function Contact() {
           onChange={handleInputChange}
           placeholder="Name"
         />
+        <br></br>
         <input
           value={email}
           name="email"
@@ -41,14 +42,16 @@ function Contact() {
           onChange={handleInputChange}
           placeholder="Email"
         />
+        <br></br>
         <input
           value={message}
           name="message"
-          type="text"
+          type="textarea"
           onChange={handleInputChange}
           placeholder="Message"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <br></br>
+        <button id="contact-btn" type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
